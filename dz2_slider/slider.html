@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+  .slider-container {
+    position: relative;
+    max-width: 600px; /* adjust as needed */
+    margin: auto;
+  }
+
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .slider img {
+    width: 100%;
+    display: none;
+  }
+
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .next-btn {
+    right: 0;
+  }
+
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #333;
+  }
+
+</style>
+<script src="slider.js" defer></script>
+<div class="slider-container">
+  <div class="slider">
+    <img src="https://i1.sndcdn.com/artworks-pDG2Cgzdln55sG7E-LtpVBw-t500x500.jpg" alt="Image 1">
+    <img src="https://i4.tabor.ru/feed/2019-01-23/17504511/1344746_760x500.jpg" alt="Image 2">
+    <img src="https://p4.tabor.ru/feed/2017-09-28/13104994/632043_760x500.jpg" alt="Image 3">
+  </div>
+  <button class="prev-btn">Previous</button>
+  <button class="next-btn">Next</button>
+  <div class="dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+
+</body>
+</html>
