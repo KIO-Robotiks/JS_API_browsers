@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="photos.js" defer></script>
+
+<style>
+    img {
+        max-height: 500px;
+        width: auto;
+    }
+
+    .imageViewed {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .imgSmall {
+        max-height: 80px;
+        width: auto;
+    }
+
+    .btn-reload {
+        margin: 5px;
+    }
+
+</style>
+
+<button class="btn-reload">Обновить</button>
+<div class="imageContainer">
+    <img class="randomImage" src="" alt="Random Image">
+    <p class="photographer"></p>
+    <button class="likeButton">Like</button>
+    <span class="likes">0</span>
+</div>
+<br>
+
+Просмотренные фото:
+<br><br>
+<div class="imageViewed">
+
+
+</div>
+
+</body>
+</html>
